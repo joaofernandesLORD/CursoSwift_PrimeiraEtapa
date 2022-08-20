@@ -50,14 +50,6 @@ class ViewController: UIViewController {
         
         resultado.text = "\(carlos1*carlos2)"
     }
-
-    
-    @IBAction func porcentagem(_ sender: Any) {
-        carlos1 = Int(number1.text!) ?? 0
-        carlos2 = Int(number2.text!) ?? 0
-        
-        resultado.text = "\(carlos1%carlos2)"
-    }
     
 }
 

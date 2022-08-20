@@ -40,21 +40,28 @@ class ViewController: UIViewController {
         //aqui começa as imagens e os nomes
         
         if imc < 18.5 {
-            segundatela.text = "\(imc)"
+
+            calculo.text = "\(imc)"
             imagemlegal.image = UIImage(named: "magro")
             
             trembala.text = "Magro"
         }else if imc < 25.0 {
-            segundatela.text = "\(imc)"
+            
+            calculo.text = "\(imc)"
             imagemlegal.image = UIImage(named: "normal")
+            
             trembala.text = "Normal"
         }else if imc < 30.0 {
-            segundatela.text = "\(imc)"
+            
+            calculo.text = "\(imc)"
             imagemlegal.image = UIImage(named: "sobrepeso")
+            
             trembala.text = "Sobre Peso"
         }else {
-            segundatela.text = "\(imc)"
+            
+            calculo.text = "\(imc)"
             imagemlegal.image = UIImage(named: "gordo")
+            
             trembala.text = "Gordo"
         }
         

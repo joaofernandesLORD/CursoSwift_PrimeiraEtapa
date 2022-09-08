@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="tyY-3G-Q6w">
+                                <rect key="frame" x="-45" y="-32" width="442" height="735"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dOA-9u-ogl">
+                                <rect key="frame" x="49" y="37" width="275" height="210"/>
+                                <color key="tintColor" red="1" green="0.59931932960000001" blue="0.074901640929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dph-62-2sf">
+                                <rect key="frame" x="1" y="138" width="373" height="128.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Qgw-zw-k6J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="81"/>
+                                <color key="textColor" red="0.80712387240000005" green="0.1910193704" blue="0.1022935185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri5-y0-Fjg">
+                                <rect key="frame" x="0.0" y="67" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="m1J-eT-DKF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="81"/>
+                                <color key="textColor" red="0.80712387240000005" green="0.1910193704" blue="0.1022935185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="zyro-image" translatesAutoresizingMaskIntoConstraints="NO" id="BTI-qF-ahU">
+                                <rect key="frame" x="0.0" y="484.5" width="375" height="182.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="8v1-6u-XqK"/>
+                                    <constraint firstAttribute="height" constant="212" id="XXn-yS-PLP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.88301545093006173" green="0.87995143673476994" blue="0.93347213273195884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BTI-qF-ahU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="1" id="22t-bm-mGQ"/>
+                            <constraint firstItem="Dph-62-2sf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="1" id="7XX-qq-AbB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTI-qF-ahU" secondAttribute="trailing" constant="1" id="7x7-6s-7JO"/>
+                            <constraint firstItem="dOA-9u-ogl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36.5" id="9x5-R5-y1t"/>
+                            <constraint firstItem="BTI-qF-ahU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EPt-2e-7Ns"/>
+                            <constraint firstItem="dOA-9u-ogl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="Htg-5o-7nh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dOA-9u-ogl" secondAttribute="bottom" constant="419.5" id="IVU-YK-pww"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dph-62-2sf" secondAttribute="trailing" constant="1" id="KoY-ST-aSK"/>
+                            <constraint firstItem="ri5-y0-Fjg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LdR-bR-alh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ri5-y0-Fjg" secondAttribute="bottom" constant="520" id="QWW-fw-bah"/>
+                            <constraint firstItem="BTI-qF-ahU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ta8-SX-efC"/>
+                            <constraint firstItem="Dph-62-2sf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="138" id="aSr-8B-Omj"/>
+                            <constraint firstItem="BTI-qF-ahU" firstAttribute="top" secondItem="dOA-9u-ogl" secondAttribute="bottom" constant="237" id="brE-Os-etd"/>
+                            <constraint firstItem="BTI-qF-ahU" firstAttribute="top" secondItem="Dph-62-2sf" secondAttribute="bottom" constant="99" id="cP4-yu-9oR"/>
+                            <constraint firstItem="BTI-qF-ahU" firstAttribute="top" secondItem="Dph-62-2sf" secondAttribute="bottom" constant="218" id="kG0-da-jRn"/>
+                            <constraint firstItem="ri5-y0-Fjg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l3E-C1-FRH"/>
+                            <constraint firstItem="BTI-qF-ahU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oWY-Bf-Eu9"/>
+                            <constraint firstItem="ri5-y0-Fjg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="pqm-ec-mic"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOA-9u-ogl" secondAttribute="trailing" constant="51" id="tdb-Oa-gEh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="papel" width="4667" height="7000"/>
+        <image name="zyro-image" width="1280" height="720"/>
+    </resources>
+</document>

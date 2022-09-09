@@ -25,12 +25,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var Select: UIView!
     @IBOutlet weak var buttonBack: UIButton!
     
-    var choose = 1
+    @IBOutlet weak var butO: UIButton!
+    @IBOutlet weak var butX: UIButton!
+    
+    var choose = 0
+    
     //oq é choose?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+
+    @IBAction func HeroCircle(_ sender: Any) {
+        choose = 1
+        Select.isHidden = true
+    }
+    
+    @IBAction func HeroCross(_ sender: Any) {
+        choose = 2
+        Select.isHidden = true
+    }
+    
     @IBAction func A1(_ sender: Any) {
         if choose == 1{
             a1.setBackgroundImage(UIImage(named: "x"), for: .normal)
@@ -160,8 +176,6 @@ class ViewController: UIViewController {
         c2.isUserInteractionEnabled = true
         c3.setBackgroundImage(UIImage(named: ""), for: .normal)
         c3.isUserInteractionEnabled = true
-        
-        buttonBack.isHidden = false
     }
 }
 

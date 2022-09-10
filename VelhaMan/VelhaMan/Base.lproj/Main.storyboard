@@ -41,14 +41,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xya-CJ-wNe" userLabel="a1">
                                 <rect key="frame" x="47" y="255" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="A1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGB-n8-8Pt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilf-0v-scL" userLabel="a2">
                                 <rect key="frame" x="47" y="357" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="A2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXj-eI-0FU"/>
                                 </connections>
@@ -56,8 +57,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-fq-mTS" userLabel="a3">
                                 <rect key="frame" x="47" y="463" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="A3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERC-TZ-x3M"/>
                                 </connections>
@@ -65,8 +65,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEx-rb-JH9" userLabel="b1">
                                 <rect key="frame" x="150" y="255" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="B1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otk-9S-orF"/>
                                 </connections>
@@ -74,8 +73,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECL-EK-hi2" userLabel="b2">
                                 <rect key="frame" x="150" y="357" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="B2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcl-4g-tuJ"/>
                                 </connections>
@@ -83,8 +81,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLO-zm-S6y" userLabel="b3">
                                 <rect key="frame" x="150" y="463" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="B3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FuO-5r-mpd"/>
                                 </connections>
@@ -92,8 +89,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-yz-5QO" userLabel="c1">
                                 <rect key="frame" x="255" y="255" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="C1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvE-Mp-j73"/>
                                 </connections>
@@ -101,8 +97,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0M-UQ-51u" userLabel="c2">
                                 <rect key="frame" x="255" y="357" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="C2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1l-0V-oLQ"/>
                                 </connections>
@@ -110,17 +105,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-Rj-xVf" userLabel="c3">
                                 <rect key="frame" x="255" y="463" width="75" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="C3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCm-lw-vOJ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="espadas" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-ua-zHY">
-                                <rect key="frame" x="112" y="99" width="151" height="104"/>
+                                <rect key="frame" x="112" y="88" width="151" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvB-hl-I1O">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvB-hl-I1O" userLabel="closeView">
                                 <rect key="frame" x="150" y="611" width="85" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -209,12 +203,41 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-i8-dwI" userLabel="WinLose">
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="xyb-VH-Lee">
+                                        <rect key="frame" x="-160" y="0.0" width="655" height="621"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-p2-rc3" userLabel="ImageVelhaMan">
+                                        <rect key="frame" x="88" y="149" width="199" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jP-1j-k44">
+                                        <rect key="frame" x="145" y="523" width="85" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.01224201724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="BACK"/>
+                                        <connections>
+                                            <action selector="BACK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vB-j5-MNS"/>
+                                            <action selector="closeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVX-KN-w0G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="A1" destination="Xya-CJ-wNe" id="IVj-Le-Y6Z"/>
                         <outlet property="A2" destination="ilf-0v-scL" id="O0I-bq-MTk"/>
                         <outlet property="A3" destination="MrM-fq-mTS" id="Cf4-rC-Zuf"/>
                         <outlet property="B1" destination="SEx-rb-JH9" id="3aL-GH-5L6"/>
@@ -223,21 +246,23 @@
                         <outlet property="C1" destination="Fyk-yz-5QO" id="uSv-wd-XCM"/>
                         <outlet property="C2" destination="U0M-UQ-51u" id="RRe-lW-pAT"/>
                         <outlet property="C3" destination="jDJ-Rj-xVf" id="aMW-SG-OQE"/>
+                        <outlet property="ImageVelhaMan" destination="UfK-p2-rc3" id="HpQ-10-ESv"/>
+                        <outlet property="JoguePelaSua" destination="FlY-ml-hbw" id="zBm-Qs-yJD"/>
+                        <outlet property="Result" destination="kys-EY-VLo" id="vRA-5B-RSa"/>
                         <outlet property="Select" destination="qxP-17-vSM" id="8c0-rz-42u"/>
-                        <outlet property="SelectOrChampion" destination="qxP-17-vSM" id="ECo-dh-ZXv"/>
+                        <outlet property="WinLose" destination="0SC-i8-dwI" id="CvJ-Hd-8aJ"/>
                         <outlet property="a1" destination="Xya-CJ-wNe" id="Sjd-R5-WJ9"/>
                         <outlet property="a2" destination="ilf-0v-scL" id="DhW-7D-gR4"/>
                         <outlet property="a3" destination="MrM-fq-mTS" id="oC9-hY-vea"/>
                         <outlet property="b1" destination="SEx-rb-JH9" id="QIS-XY-BUi"/>
                         <outlet property="b2" destination="ECL-EK-hi2" id="ZKv-VI-xeF"/>
                         <outlet property="b3" destination="WLO-zm-S6y" id="HMd-O0-Vw3"/>
+                        <outlet property="butO" destination="7cb-5H-EaK" id="Nw1-8c-bXi"/>
                         <outlet property="butX" destination="bpK-uX-Eye" id="GVj-cT-gKL"/>
-                        <outlet property="buto" destination="7cb-5H-EaK" id="Yi2-mc-bJc"/>
                         <outlet property="buttonBack" destination="rvB-hl-I1O" id="JxO-3s-uFC"/>
                         <outlet property="c1" destination="Fyk-yz-5QO" id="IpP-kX-5xQ"/>
                         <outlet property="c2" destination="U0M-UQ-51u" id="TxZ-Kh-jPu"/>
                         <outlet property="c3" destination="jDJ-Rj-xVf" id="WYy-Kz-ozU"/>
-                        <outlet property="choose" destination="qxP-17-vSM" id="aUH-gI-vt9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

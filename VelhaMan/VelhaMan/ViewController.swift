@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //BOTÕES DA COLUNA A
     @IBOutlet weak var a1: UIButton!
     @IBOutlet weak var a2: UIButton!
@@ -21,13 +21,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var c1: UIButton!
     @IBOutlet weak var c2: UIButton!
     @IBOutlet weak var c3: UIButton!
-    
+    //View Select
     @IBOutlet weak var Select: UIView!
     @IBOutlet weak var buttonBack: UIButton!
-    
+    //Selecione seu campeão
     @IBOutlet weak var butO: UIButton!
     @IBOutlet weak var butX: UIButton!
+    //Coisas pra quem vencer ou perder
+    @IBOutlet weak var WinLose: UIView!
+    @IBOutlet weak var JoguePelaSua: UILabel!
+    @IBOutlet weak var Result: UILabel!
     
+    @IBOutlet weak var ImageVelhaMan: UIImageView!
+    
+    var CIRCLE = "o"
+    var CROSS = "x"
     var choose = 0
     
     //oq é choose?
@@ -46,118 +54,126 @@ class ViewController: UIViewController {
         choose = 2
         Select.isHidden = true
     }
-    
+
     @IBAction func A1(_ sender: Any) {
         if choose == 1{
-            a1.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            a1.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             a1.isUserInteractionEnabled = false
         }else {
-            a1.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            a1.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             a1.isUserInteractionEnabled = false
         }
-    
+        validando()
 }
 
     @IBAction func A2(_ sender: Any) {
         if choose == 1{
-            a2.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            a2.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             a2.isUserInteractionEnabled = false
         }else {
-            a2.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            a2.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             a2.isUserInteractionEnabled = false
         }
+        validando()
     }
     
     @IBAction func A3(_ sender: Any) {
         if choose == 1{
-            a3.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            a3.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             a3.isUserInteractionEnabled = false
         }else {
-            a3.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            a3.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             a3.isUserInteractionEnabled = false
         }
+        validando()
     }
     
     @IBAction func B1(_ sender: Any) {
         if choose == 1{
-            b1.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            b1.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             b1.isUserInteractionEnabled = false
         }else {
-            b1.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            b1.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             b1.isUserInteractionEnabled = false
         }
+        validando()
     }
     
     @IBAction func B2(_ sender: Any) {
         if choose == 1{
-            b2.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            b2.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             b2.isUserInteractionEnabled = false
         }else {
-            b2.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            b2.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             b2.isUserInteractionEnabled = false
         }
+        validando()
     }
     
     @IBAction func B3(_ sender: Any) {
         if choose == 1{
-            b3.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            b3.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             b3.isUserInteractionEnabled = false
         }else {
-            b3.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            b3.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             b3.isUserInteractionEnabled = false
         }
+        validando()
     }
     
     @IBAction func C1(_ sender: Any) {
         if choose == 1{
-            c1.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            c1.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             c1.isUserInteractionEnabled = false
         }else {
-            c1.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            c1.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             c1.isUserInteractionEnabled = false
         }
+        validando()
     }
     
     @IBAction func C2(_ sender: Any) {
         if choose == 1{
-            c2.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            c2.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             c2.isUserInteractionEnabled = false
         }else {
-            c2.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            c2.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             c2.isUserInteractionEnabled = false
         }
+        validando()
     }
     
     @IBAction func C3(_ sender: Any) {
         if choose == 1{
-            c3.setBackgroundImage(UIImage(named: "x"), for: .normal)
+            c3.setBackgroundImage(UIImage(named: "o"), for: .normal)
             choose = 2
             c3.isUserInteractionEnabled = false
         }else {
-            c3.setBackgroundImage(UIImage(named: "o"), for: .normal)
+            c3.setBackgroundImage(UIImage(named: "x"), for: .normal)
             choose = 1
             c3.isUserInteractionEnabled = false
         }
+        
     }
 
     @IBAction func closeView(_ sender: Any) {
-        Select.isHidden = true
+        Select.isHidden = false
         a1.setBackgroundImage(UIImage(named: ""), for: .normal)
         a1.isUserInteractionEnabled = true
         a2.setBackgroundImage(UIImage(named: ""), for: .normal)
@@ -177,6 +193,34 @@ class ViewController: UIViewController {
         c3.setBackgroundImage(UIImage(named: ""), for: .normal)
         c3.isUserInteractionEnabled = true
     }
+    @IBAction func BACK(_ sender: Any) {
+        Select.isHidden = false
+        WinLose.isHidden = true
+        a1.setBackgroundImage(UIImage(named: ""), for: .normal)
+        a1.isUserInteractionEnabled = true
+        a2.setBackgroundImage(UIImage(named: ""), for: .normal)
+        a2.isUserInteractionEnabled = true
+        a3.setBackgroundImage(UIImage(named: ""), for: .normal)
+        a3.isUserInteractionEnabled = true
+        b1.setBackgroundImage(UIImage(named: ""), for: .normal)
+        b1.isUserInteractionEnabled = true
+        b2.setBackgroundImage(UIImage(named: ""), for: .normal)
+        b2.isUserInteractionEnabled = true
+        b3.setBackgroundImage(UIImage(named: ""), for: .normal)
+        b3.isUserInteractionEnabled = true
+        c1.setBackgroundImage(UIImage(named: ""), for: .normal)
+        c1.isUserInteractionEnabled = true
+        c2.setBackgroundImage(UIImage(named: ""), for: .normal)
+        c2.isUserInteractionEnabled = true
+        c3.setBackgroundImage(UIImage(named: ""), for: .normal)
+        c3.isUserInteractionEnabled = true
+    }
+    
+    func validando() {
+        if a1.backgroundImage(for: .normal) == a2.backgroundImage(for: .normal) && a2.backgroundImage(for: .normal) == a3.backgroundImage(for: .normal){
+            WinLose.isHidden = false
+        }else {
+            
+        }
 }
-
-
+}

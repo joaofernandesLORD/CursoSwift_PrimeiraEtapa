@@ -211,7 +211,7 @@
                                         <rect key="frame" x="-160" y="0.0" width="655" height="621"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-p2-rc3" userLabel="ImageVelhaMan">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YouWin" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-p2-rc3" userLabel="ImageVelhaMan">
                                         <rect key="frame" x="88" y="149" width="199" height="216"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -273,6 +273,7 @@
     <resources>
         <image name="HeroiCirculo" width="577" height="433"/>
         <image name="HeroiCruz" width="577" height="433"/>
+        <image name="YouWin" width="500" height="500"/>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
         <image name="espadas" width="512" height="512"/>
         <image name="o" width="592" height="600"/>

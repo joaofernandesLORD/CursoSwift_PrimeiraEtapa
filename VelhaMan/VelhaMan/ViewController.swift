@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var butX: UIButton!
     //Coisas pra quem vencer ou perder
     @IBOutlet weak var WinLose: UIView!
-    @IBOutlet weak var JoguePelaSua: UILabel!
     @IBOutlet weak var Result: UILabel!
     
     @IBOutlet weak var ImageVelhaMan: UIImageView!
@@ -65,7 +64,9 @@ class ViewController: UIViewController {
             choose = 1
             a1.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
 }
 
     @IBAction func A2(_ sender: Any) {
@@ -78,7 +79,9 @@ class ViewController: UIViewController {
             choose = 1
             a2.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
     
     @IBAction func A3(_ sender: Any) {
@@ -91,7 +94,9 @@ class ViewController: UIViewController {
             choose = 1
             a3.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
     
     @IBAction func B1(_ sender: Any) {
@@ -104,7 +109,9 @@ class ViewController: UIViewController {
             choose = 1
             b1.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
     
     @IBAction func B2(_ sender: Any) {
@@ -117,7 +124,9 @@ class ViewController: UIViewController {
             choose = 1
             b2.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
     
     @IBAction func B3(_ sender: Any) {
@@ -130,7 +139,9 @@ class ViewController: UIViewController {
             choose = 1
             b3.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
     
     @IBAction func C1(_ sender: Any) {
@@ -143,7 +154,9 @@ class ViewController: UIViewController {
             choose = 1
             c1.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
     
     @IBAction func C2(_ sender: Any) {
@@ -156,7 +169,9 @@ class ViewController: UIViewController {
             choose = 1
             c2.isUserInteractionEnabled = false
         }
-        validando()
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
     
     @IBAction func C3(_ sender: Any) {
@@ -169,7 +184,9 @@ class ViewController: UIViewController {
             choose = 1
             c3.isUserInteractionEnabled = false
         }
-        
+        validandoColuna()
+        validandoLinha()
+        validandoDiagonal()
     }
 
     @IBAction func closeView(_ sender: Any) {
@@ -192,6 +209,7 @@ class ViewController: UIViewController {
         c2.isUserInteractionEnabled = true
         c3.setBackgroundImage(UIImage(named: ""), for: .normal)
         c3.isUserInteractionEnabled = true
+        Result.text = "Jogue pela sua LIBERDADE"
     }
     @IBAction func BACK(_ sender: Any) {
         Select.isHidden = false
@@ -214,13 +232,56 @@ class ViewController: UIViewController {
         c2.isUserInteractionEnabled = true
         c3.setBackgroundImage(UIImage(named: ""), for: .normal)
         c3.isUserInteractionEnabled = true
+        Result.text = "Jogue pela sua LIBERDADE"
     }
     
-    func validando() {
-        if a1.backgroundImage(for: .normal) == a2.backgroundImage(for: .normal) && a2.backgroundImage(for: .normal) == a3.backgroundImage(for: .normal){
+    func validandoColuna() {
+        if
+            //Coluna A
+            a1.backgroundImage(for: .normal) == a2.backgroundImage(for: .normal) && a2.backgroundImage(for: .normal) == a3.backgroundImage(for: .normal) && (a1.backgroundImage(for: .normal) == UIImage(named: "x") || a1.backgroundImage(for: .normal) == UIImage(named: "o")){
+            Result.text = "VALHALLA te espera, nobre guerreiro"
             WinLose.isHidden = false
-        }else {
-            
+        }else if
+            //Coluna B
+            b1.backgroundImage(for: .normal) == b2.backgroundImage(for: .normal) && b2.backgroundImage(for: .normal) == b3.backgroundImage(for: .normal) && (b1.backgroundImage(for: .normal) == UIImage(named: "x") || b1.backgroundImage(for: .normal) == UIImage(named: "o")) {
+            Result.text = "VALHALLA te espera, nobre guerreiro"
+            WinLose.isHidden = false
+        }else if
+                // Coluna C
+                c1.backgroundImage(for: .normal) == c2.backgroundImage(for: .normal) && c2.backgroundImage(for: .normal) == c3.backgroundImage(for: .normal) && (c1.backgroundImage(for: .normal) == UIImage(named: "x") || c1.backgroundImage(for: .normal) == UIImage(named: "o")) {
+            Result.text = "VALHALLA te espera, nobre guerreiro"
+            WinLose.isHidden = false
         }
+    }
+    func validandoLinha () {
+        if
+        //Linha 1
+        a1.backgroundImage(for: .normal) == b1.backgroundImage(for: .normal) && b1.backgroundImage(for: .normal) == c1.backgroundImage(for: .normal) && (a1.backgroundImage(for: .normal) == UIImage(named: "x") || a1.backgroundImage(for: .normal) == UIImage(named: "o")) {
+            Result.text = "VALHALLA te espera, nobre guerreiro"
+            WinLose.isHidden = false
+    } else if
+        //Linha 2
+        a2.backgroundImage(for: .normal) == b2.backgroundImage(for: .normal) && b2.backgroundImage(for: .normal) == c2.backgroundImage(for: .normal) && (a2.backgroundImage(for: .normal) == UIImage(named: "x") || a2.backgroundImage(for: .normal) == UIImage(named: "o")) {
+        Result.text = "VALHALLA te espera, nobre guerreiro"
+        WinLose.isHidden = false
+    } else if
+        //Linha 3
+        a3.backgroundImage(for: .normal) == b3.backgroundImage(for: .normal) && b3.backgroundImage(for: .normal) == c3.backgroundImage(for: .normal) && (a3.backgroundImage(for: .normal) == UIImage(named: "x") || a3.backgroundImage(for: .normal) == UIImage(named: "o")) {
+            Result.text = "VALHALLA te espera, nobre guerreiro"
+            WinLose.isHidden = false
+    }
+  }
+    func validandoDiagonal() {
+        if
+        //Diagonal esquerda
+        a1.backgroundImage(for: .normal) == b2.backgroundImage(for: .normal) && b2.backgroundImage(for: .normal) == c3.backgroundImage(for: .normal) && (a1.backgroundImage(for: .normal) == UIImage(named: "x") || a1.backgroundImage(for: .normal) == UIImage(named: "o")) {
+            Result.text = "VALHALLA te espera, nobre guerreiro"
+            WinLose.isHidden = false
+        }else if
+        //Diagonal direita
+        c1.backgroundImage(for: .normal) == b2.backgroundImage(for: .normal) && b2.backgroundImage(for: .normal) == a3.backgroundImage(for: .normal) && (c1.backgroundImage(for: .normal) == UIImage(named: "x") || c1.backgroundImage(for: .normal) == UIImage(named: "o")) {
+            Result.text = "VALHALLA te espera, nobre guerreiro"
+        WinLose.isHidden = false
+    }
 }
 }

@@ -20,18 +20,18 @@
                                 <rect key="frame" x="-34" y="-64" width="458" height="803"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LIBERDADE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kys-EY-VLo">
-                                <rect key="frame" x="207" y="50" width="115" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kys-EY-VLo">
+                                <rect key="frame" x="0.0" y="50" width="375" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
-                                <color key="textColor" red="0.80712387240000005" green="0.1910193704" blue="0.1022935185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joguem pela sua" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlY-ml-hbw">
-                                <rect key="frame" x="16" y="52" width="201" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Jogue pela sua LIBERDADE">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="25" name="AvenirNextCondensed-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="velhamodelo" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-z0-X0M">
@@ -102,12 +102,15 @@
                                     <action selector="C2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1l-0V-oLQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-Rj-xVf" userLabel="c3">
-                                <rect key="frame" x="255" y="463" width="75" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFK-fW-ivA" userLabel="c3">
+                                <rect key="frame" x="255" y="457" width="75" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
                                 <connections>
-                                    <action selector="C3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCm-lw-vOJ"/>
+                                    <action selector="C3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w22-e7-Uyd"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="espadas" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-ua-zHY">
@@ -204,19 +207,15 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-i8-dwI" userLabel="WinLose">
-                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="577"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="xyb-VH-Lee">
-                                        <rect key="frame" x="-160" y="0.0" width="655" height="621"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YouWin" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-p2-rc3" userLabel="ImageVelhaMan">
-                                        <rect key="frame" x="88" y="149" width="199" height="216"/>
+                                        <rect key="frame" x="-123" y="0.0" width="622" height="621"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jP-1j-k44">
-                                        <rect key="frame" x="145" y="523" width="85" height="36"/>
+                                        <rect key="frame" x="145" y="521" width="85" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -230,6 +229,10 @@
                                             <action selector="closeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVX-KN-w0G"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YouWin" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-p2-rc3" userLabel="ImageVelhaMan">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="370"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -245,9 +248,7 @@
                         <outlet property="B3" destination="WLO-zm-S6y" id="lja-pq-MQd"/>
                         <outlet property="C1" destination="Fyk-yz-5QO" id="uSv-wd-XCM"/>
                         <outlet property="C2" destination="U0M-UQ-51u" id="RRe-lW-pAT"/>
-                        <outlet property="C3" destination="jDJ-Rj-xVf" id="aMW-SG-OQE"/>
                         <outlet property="ImageVelhaMan" destination="UfK-p2-rc3" id="HpQ-10-ESv"/>
-                        <outlet property="JoguePelaSua" destination="FlY-ml-hbw" id="zBm-Qs-yJD"/>
                         <outlet property="Result" destination="kys-EY-VLo" id="vRA-5B-RSa"/>
                         <outlet property="Select" destination="qxP-17-vSM" id="8c0-rz-42u"/>
                         <outlet property="WinLose" destination="0SC-i8-dwI" id="CvJ-Hd-8aJ"/>
@@ -262,7 +263,7 @@
                         <outlet property="buttonBack" destination="rvB-hl-I1O" id="JxO-3s-uFC"/>
                         <outlet property="c1" destination="Fyk-yz-5QO" id="IpP-kX-5xQ"/>
                         <outlet property="c2" destination="U0M-UQ-51u" id="TxZ-Kh-jPu"/>
-                        <outlet property="c3" destination="jDJ-Rj-xVf" id="WYy-Kz-ozU"/>
+                        <outlet property="c3" destination="zFK-fW-ivA" id="cik-dj-eVi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -16,25 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="iphone.homebutton.landscape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-FO-gnC">
-                                <rect key="frame" x="16" y="50.5" width="343" height="422"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="iphone.homebutton.landscape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-FO-gnC">
+                                <rect key="frame" x="16" y="119.5" width="343" height="422"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O SEGREDO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-fb-5ve">
-                                <rect key="frame" x="97" y="242" width="180" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O SEGREDO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-fb-5ve">
+                                <rect key="frame" x="98" y="242" width="179.5" height="183"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SenseiTreinoCha" translatesAutoresizingMaskIntoConstraints="NO" id="qvY-IB-rS6">
-                                <rect key="frame" x="42" y="387" width="317" height="316"/>
+                                <rect key="frame" x="44" y="339" width="286" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="cMs-FO-gnC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="0Ke-VA-LXL"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="242" id="1aE-AM-QpL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cMs-FO-gnC" secondAttribute="trailing" constant="16" id="3bq-6W-sus"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6Hl-Wq-fBN"/>
+                            <constraint firstItem="cMs-FO-gnC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ti2-Tw-scU"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WGq-Vp-lrw"/>
+                            <constraint firstItem="cMs-FO-gnC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yQu-ce-0kp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cMs-FO-gnC" secondAttribute="bottom" constant="122" id="zPM-Wk-IyV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

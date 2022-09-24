@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BD8422B28DF57F000E2F08D /* FatorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD8422A28DF57F000E2F08D /* FatorialViewController.swift */; };
+		9BD8422D28DF581E00E2F08D /* FibonicciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD8422C28DF581E00E2F08D /* FibonicciViewController.swift */; };
 		C42DF1AE28D91F1D00EFEF00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DF1AD28D91F1D00EFEF00 /* AppDelegate.swift */; };
 		C42DF1B028D91F1D00EFEF00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DF1AF28D91F1D00EFEF00 /* SceneDelegate.swift */; };
-		C42DF1B228D91F1D00EFEF00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DF1B128D91F1D00EFEF00 /* ViewController.swift */; };
 		C42DF1B528D91F1D00EFEF00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42DF1B328D91F1D00EFEF00 /* Main.storyboard */; };
 		C42DF1B728D91F1E00EFEF00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42DF1B628D91F1E00EFEF00 /* Assets.xcassets */; };
 		C42DF1BA28D91F1E00EFEF00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42DF1B828D91F1E00EFEF00 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BD8422A28DF57F000E2F08D /* FatorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatorialViewController.swift; sourceTree = "<group>"; };
+		9BD8422C28DF581E00E2F08D /* FibonicciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonicciViewController.swift; sourceTree = "<group>"; };
 		C42DF1AA28D91F1D00EFEF00 /* Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Math.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42DF1AD28D91F1D00EFEF00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C42DF1AF28D91F1D00EFEF00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C42DF1B128D91F1D00EFEF00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C42DF1B428D91F1D00EFEF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C42DF1B628D91F1E00EFEF00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C42DF1B928D91F1E00EFEF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			children = (
 				C42DF1AD28D91F1D00EFEF00 /* AppDelegate.swift */,
 				C42DF1AF28D91F1D00EFEF00 /* SceneDelegate.swift */,
-				C42DF1B128D91F1D00EFEF00 /* ViewController.swift */,
+				9BD8422A28DF57F000E2F08D /* FatorialViewController.swift */,
+				9BD8422C28DF581E00E2F08D /* FibonicciViewController.swift */,
 				C42DF1B328D91F1D00EFEF00 /* Main.storyboard */,
 				C42DF1B628D91F1E00EFEF00 /* Assets.xcassets */,
 				C42DF1B828D91F1E00EFEF00 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42DF1B228D91F1D00EFEF00 /* ViewController.swift in Sources */,
 				C42DF1AE28D91F1D00EFEF00 /* AppDelegate.swift in Sources */,
+				9BD8422D28DF581E00E2F08D /* FibonicciViewController.swift in Sources */,
 				C42DF1B028D91F1D00EFEF00 /* SceneDelegate.swift in Sources */,
+				9BD8422B28DF57F000E2F08D /* FatorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

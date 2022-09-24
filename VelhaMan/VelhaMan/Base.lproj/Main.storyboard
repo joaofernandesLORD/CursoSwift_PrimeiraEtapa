@@ -16,27 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="smf-ap-vTd">
-                                <rect key="frame" x="-34" y="-64" width="458" height="803"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kys-EY-VLo">
-                                <rect key="frame" x="0.0" y="50" width="375" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Jogue pela sua LIBERDADE">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="25" name="AvenirNextCondensed-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="velhamodelo" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-z0-X0M">
-                                <rect key="frame" x="16" y="200" width="343" height="377"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="velhamodelo" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-z0-X0M">
+                                <rect key="frame" x="16" y="145" width="343" height="377"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xya-CJ-wNe" userLabel="a1">
                                 <rect key="frame" x="47" y="255" width="75" height="62"/>
@@ -113,33 +94,97 @@
                                     <action selector="C3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w22-e7-Uyd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="espadas" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-ua-zHY">
-                                <rect key="frame" x="112" y="88" width="151" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="espadas" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-ua-zHY">
+                                <rect key="frame" x="112" y="20" width="151" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvB-hl-I1O" userLabel="closeView">
-                                <rect key="frame" x="150" y="611" width="85" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kys-EY-VLo">
+                                <rect key="frame" x="55" y="123" width="265.66666666666669" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Jogue pela sua LIBERDADE">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="25" name="AvenirNextCondensed-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvB-hl-I1O" userLabel="closeView">
+                                <rect key="frame" x="112" y="590" width="151" height="31.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
                                     <color key="titleColor" red="1" green="0.0" blue="0.01224201724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <buttonConfiguration key="configuration" style="plain" title="BACK"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Recomeçar"/>
                                 <connections>
                                     <action selector="closeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q28-Cq-CTL"/>
                                 </connections>
                             </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="QAD-ua-zHY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Hz-Yf-0Q0"/>
+                            <constraint firstItem="QAD-ua-zHY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="6qI-Yq-ckC"/>
+                            <constraint firstItem="vhB-z0-X0M" firstAttribute="top" secondItem="QAD-ua-zHY" secondAttribute="bottom" constant="25" id="COf-uw-uUL"/>
+                            <constraint firstItem="vhB-z0-X0M" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.914667" id="DPz-Y6-JE2"/>
+                            <constraint firstItem="vhB-z0-X0M" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Hwi-Ij-OyL"/>
+                            <constraint firstItem="vhB-z0-X0M" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ip4-2H-7og"/>
+                            <constraint firstItem="rvB-hl-I1O" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JaU-dB-NPa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QAD-ua-zHY" secondAttribute="trailing" constant="112" id="O4k-qR-9Wp"/>
+                            <constraint firstItem="QAD-ua-zHY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="Zhh-jr-oyA"/>
+                            <constraint firstItem="vhB-z0-X0M" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.565217" id="blc-gS-HSl"/>
+                            <constraint firstItem="rvB-hl-I1O" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.402667" id="hc8-0d-fue"/>
+                            <constraint firstItem="rvB-hl-I1O" firstAttribute="top" secondItem="vhB-z0-X0M" secondAttribute="bottom" constant="68" id="nDs-zS-XAx"/>
+                            <constraint firstItem="rvB-hl-I1O" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.047" id="zBa-re-BlB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="A2" destination="ilf-0v-scL" id="O0I-bq-MTk"/>
+                        <outlet property="A3" destination="MrM-fq-mTS" id="Cf4-rC-Zuf"/>
+                        <outlet property="B1" destination="SEx-rb-JH9" id="3aL-GH-5L6"/>
+                        <outlet property="B2" destination="ECL-EK-hi2" id="tNh-Ev-7MX"/>
+                        <outlet property="B3" destination="WLO-zm-S6y" id="lja-pq-MQd"/>
+                        <outlet property="C1" destination="Fyk-yz-5QO" id="uSv-wd-XCM"/>
+                        <outlet property="C2" destination="U0M-UQ-51u" id="RRe-lW-pAT"/>
+                        <outlet property="ImageVelhaMan" destination="UfK-p2-rc3" id="HpQ-10-ESv"/>
+                        <outlet property="Result" destination="kys-EY-VLo" id="vRA-5B-RSa"/>
+                        <outlet property="Select" destination="qxP-17-vSM" id="8c0-rz-42u"/>
+                        <outlet property="WinLose" destination="0SC-i8-dwI" id="CvJ-Hd-8aJ"/>
+                        <outlet property="a1" destination="Xya-CJ-wNe" id="Sjd-R5-WJ9"/>
+                        <outlet property="a2" destination="ilf-0v-scL" id="DhW-7D-gR4"/>
+                        <outlet property="a3" destination="MrM-fq-mTS" id="oC9-hY-vea"/>
+                        <outlet property="b1" destination="SEx-rb-JH9" id="QIS-XY-BUi"/>
+                        <outlet property="b2" destination="ECL-EK-hi2" id="ZKv-VI-xeF"/>
+                        <outlet property="b3" destination="WLO-zm-S6y" id="HMd-O0-Vw3"/>
+                        <outlet property="butO" destination="7cb-5H-EaK" id="Nw1-8c-bXi"/>
+                        <outlet property="butX" destination="bpK-uX-Eye" id="GVj-cT-gKL"/>
+                        <outlet property="buttonBack" destination="rvB-hl-I1O" id="JxO-3s-uFC"/>
+                        <outlet property="c1" destination="Fyk-yz-5QO" id="IpP-kX-5xQ"/>
+                        <outlet property="c2" destination="U0M-UQ-51u" id="TxZ-Kh-jPu"/>
+                        <outlet property="c3" destination="zFK-fW-ivA" id="cik-dj-eVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="83.208395802098963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Iae-kL-fnV">
+            <objects>
+                <viewController id="Cqh-R1-R6e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMF-ab-CgW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxP-17-vSM" userLabel="Select">
-                                <rect key="frame" x="0.0" y="207" width="375" height="460"/>
+                                <rect key="frame" x="0.0" y="103" width="375" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="d4u-hZ-9Cl">
-                                        <rect key="frame" x="-148" y="-8" width="694" height="606"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escolha seu Guerreiro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q3-kB-DJh">
                                         <rect key="frame" x="56" y="0.0" width="262" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -204,16 +249,29 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p2j-jY-JZd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gih-x9-GRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xsw-We-ieV">
+            <objects>
+                <viewController id="RT4-ng-oNS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bI-ts-PZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-i8-dwI" userLabel="WinLose">
-                                <rect key="frame" x="0.0" y="88" width="375" height="577"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="577"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="xyb-VH-Lee">
-                                        <rect key="frame" x="-123" y="0.0" width="622" height="621"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jP-1j-k44">
                                         <rect key="frame" x="145" y="521" width="85" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -234,41 +292,16 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="XDi-x8-imW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="A2" destination="ilf-0v-scL" id="O0I-bq-MTk"/>
-                        <outlet property="A3" destination="MrM-fq-mTS" id="Cf4-rC-Zuf"/>
-                        <outlet property="B1" destination="SEx-rb-JH9" id="3aL-GH-5L6"/>
-                        <outlet property="B2" destination="ECL-EK-hi2" id="tNh-Ev-7MX"/>
-                        <outlet property="B3" destination="WLO-zm-S6y" id="lja-pq-MQd"/>
-                        <outlet property="C1" destination="Fyk-yz-5QO" id="uSv-wd-XCM"/>
-                        <outlet property="C2" destination="U0M-UQ-51u" id="RRe-lW-pAT"/>
-                        <outlet property="ImageVelhaMan" destination="UfK-p2-rc3" id="HpQ-10-ESv"/>
-                        <outlet property="Result" destination="kys-EY-VLo" id="vRA-5B-RSa"/>
-                        <outlet property="Select" destination="qxP-17-vSM" id="8c0-rz-42u"/>
-                        <outlet property="WinLose" destination="0SC-i8-dwI" id="CvJ-Hd-8aJ"/>
-                        <outlet property="a1" destination="Xya-CJ-wNe" id="Sjd-R5-WJ9"/>
-                        <outlet property="a2" destination="ilf-0v-scL" id="DhW-7D-gR4"/>
-                        <outlet property="a3" destination="MrM-fq-mTS" id="oC9-hY-vea"/>
-                        <outlet property="b1" destination="SEx-rb-JH9" id="QIS-XY-BUi"/>
-                        <outlet property="b2" destination="ECL-EK-hi2" id="ZKv-VI-xeF"/>
-                        <outlet property="b3" destination="WLO-zm-S6y" id="HMd-O0-Vw3"/>
-                        <outlet property="butO" destination="7cb-5H-EaK" id="Nw1-8c-bXi"/>
-                        <outlet property="butX" destination="bpK-uX-Eye" id="GVj-cT-gKL"/>
-                        <outlet property="buttonBack" destination="rvB-hl-I1O" id="JxO-3s-uFC"/>
-                        <outlet property="c1" destination="Fyk-yz-5QO" id="IpP-kX-5xQ"/>
-                        <outlet property="c2" destination="U0M-UQ-51u" id="TxZ-Kh-jPu"/>
-                        <outlet property="c3" destination="zFK-fW-ivA" id="cik-dj-eVi"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HcJ-tO-yKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.600000000000001" y="83.208395802098963"/>
+            <point key="canvasLocation" x="871" y="-313"/>
         </scene>
     </scenes>
     <resources>
@@ -278,11 +311,16 @@
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
         <image name="espadas" width="512" height="512"/>
         <image name="o" width="592" height="600"/>
-        <image name="papel" width="4667" height="7000"/>
         <image name="velhamodelo" width="1160" height="1160"/>
         <image name="x" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

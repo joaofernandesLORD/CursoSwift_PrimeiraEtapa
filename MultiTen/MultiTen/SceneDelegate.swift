@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MultiTen
 //
-//  Created by ICMMAC04-3F86 on 25/08/22.
+//  Created by LordPinguim.
 //
 
 import UIKit

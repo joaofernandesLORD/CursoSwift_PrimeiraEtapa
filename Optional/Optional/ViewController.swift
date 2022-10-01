@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Optional
 //
-//  Created by ICMMAC09-BF7F on 16/08/22.
+//  Created by LordPinguim.
 //
 
 import UIKit
@@ -10,46 +10,48 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var resultado: UILabel!
-    @IBOutlet weak var number1: UITextField!
-    @IBOutlet weak var number2: UITextField!
+    @IBOutlet weak var tfnumber1: UITextField!
+    @IBOutlet weak var tfnumber2: UITextField!
     
-    var carlos1 = 0
-    var carlos2 = 0
+    var number1 = 0.0
+    var number2 = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func soma(_ sender: Any) {
-        carlos1 = Int(number1.text!) ?? 0
-        carlos2 = Int(number2.text!) ?? 0
+        number1 = Double(tfnumber1.text!) ?? 0.0
+        number2 = Double(tfnumber2.text!) ?? 0.0
 
-        resultado.text = "\(carlos1+carlos2)"
+        resultado.text = "\(number1+number2)"
     }
     
     @IBAction func minus(_ sender: Any) {
-        carlos1 = Int(number1.text!) ?? 0
-        carlos2 = Int(number2.text!) ?? 0
+        number1 = Double(tfnumber1.text!) ?? 0.0
+        number2 = Double(tfnumber2.text!) ?? 0.0
         
-        resultado.text = "\(carlos1-carlos2)"
+        resultado.text = "\(number1-number2)"
     }
     
     
     @IBAction func dividir(_ sender: Any) {
-        carlos1 = Int(number1.text!) ?? 0
-        carlos2 = Int(number2.text!) ?? 0
+        number1 = Double(tfnumber1.text!) ?? 0.0
+        number2 = Double(tfnumber2.text!) ?? 0.0
         
-        resultado.text = "\(carlos1/carlos2)"
+        resultado.text = "\(number1/number2)"
     }
     
     
     @IBAction func multiplicar(_ sender: Any) {
-        carlos1 = Int(number1.text!) ?? 0
-        carlos2 = Int(number2.text!) ?? 0
+        number1 = Double(tfnumber1.text!) ?? 0.0
+        number2 = Double(tfnumber2.text!) ?? 0.0
         
-        resultado.text = "\(carlos1*carlos2)"
+        resultado.text = "\(number1*number2)"
     }
-    
+    // Quando tocar fora da tela ele fecha
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        }
 }
 

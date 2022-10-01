@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  MyEmotion
 //
-//  Created by ICMMAC09-BF7F on 16/08/22.
+//  Created by LordPinguim.
 //
 
 import UIKit
@@ -10,12 +10,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Fantasma: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
     
     @IBAction func happy(_ sender: Any) {
        Fantasma.image = UIImage(named: "pingufeliz")

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Optional
 //
-//  Created by ICMMAC09-BF7F on 16/08/22.
+//  Created by LordPinguim.
 //
 
 import UIKit

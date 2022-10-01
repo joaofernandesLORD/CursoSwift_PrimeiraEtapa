@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -14,42 +14,36 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiTen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbD-Fc-NT2">
-                                <rect key="frame" x="0.0" y="48" width="375" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="VYw-of-0qb"/>
-                                    <constraint firstAttribute="height" constant="30" id="qUu-ut-pyP"/>
-                                </constraints>
+                                <rect key="frame" x="109" y="200.33333333333334" width="172" height="30"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5F-2K-MPz">
+                                <rect key="frame" x="13.666666666666657" y="245.33333333333334" width="362.66666666666674" height="19.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Digite o numero para descobrir um segredo">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="15" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZi-MR-ClE">
-                                <rect key="frame" x="139" y="110" width="97" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="udM-lY-Qpi"/>
-                                </constraints>
+                                <rect key="frame" x="150" y="321" width="85.333333333333314" height="43"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite o numero para descobrir um segredo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5F-2K-MPz">
-                                <rect key="frame" x="0.0" y="48" width="375" height="78"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="C02-wQ-KP5"/>
-                                    <constraint firstAttribute="height" constant="78" id="HCZ-Hy-tm8"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="78" id="PKc-dD-Br0"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="WbJ-9n-mam"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLr-3f-JUw">
-                                <rect key="frame" x="118" y="169" width="139" height="34.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLr-3f-JUw">
+                                <rect key="frame" x="133" y="411" width="124" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Segredo">
                                     <backgroundConfiguration key="background">
@@ -62,8 +56,56 @@
                                     <action selector="ButCalc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0J-dI-eTX"/>
                                 </connections>
                             </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="width" secondItem="GZi-MR-ClE" secondAttribute="width" multiplier="2.01333" id="3mU-GO-YXW"/>
+                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="width" secondItem="vLr-3f-JUw" secondAttribute="width" multiplier="1.38532" id="5Z0-b8-qzg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vLr-3f-JUw" secondAttribute="trailing" constant="133" id="6Ni-XF-e5w"/>
+                            <constraint firstItem="vLr-3f-JUw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="109:667" id="DvG-xh-gsL"/>
+                            <constraint firstItem="b5F-2K-MPz" firstAttribute="top" secondItem="zbD-Fc-NT2" secondAttribute="bottom" constant="15" id="MIz-Qk-ezi"/>
+                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S95-fO-Fqt"/>
+                            <constraint firstItem="vLr-3f-JUw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.290667" id="Usv-fe-PHp"/>
+                            <constraint firstItem="b5F-2K-MPz" firstAttribute="centerX" secondItem="vLr-3f-JUw" secondAttribute="centerX" id="ZoE-Sd-dY8"/>
+                            <constraint firstItem="GZi-MR-ClE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bxV-z3-QeY"/>
+                            <constraint firstItem="vLr-3f-JUw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dUT-Cc-fzN"/>
+                            <constraint firstItem="vLr-3f-JUw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="dXf-aW-1sD"/>
+                            <constraint firstItem="GZi-MR-ClE" firstAttribute="top" secondItem="b5F-2K-MPz" secondAttribute="bottom" constant="56" id="fOX-A6-4CN"/>
+                            <constraint firstItem="vLr-3f-JUw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gYa-w9-mjF"/>
+                            <constraint firstItem="b5F-2K-MPz" firstAttribute="width" secondItem="GZi-MR-ClE" secondAttribute="width" multiplier="4.25333" id="huF-M6-W4U"/>
+                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="centerX" secondItem="b5F-2K-MPz" secondAttribute="centerX" id="iLu-DS-STf"/>
+                            <constraint firstItem="b5F-2K-MPz" firstAttribute="width" secondItem="vLr-3f-JUw" secondAttribute="width" multiplier="2.92661" id="lQz-Ry-gze"/>
+                            <constraint firstItem="GZi-MR-ClE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.051" id="qC6-bW-gmq"/>
+                            <constraint firstItem="vLr-3f-JUw" firstAttribute="top" secondItem="GZi-MR-ClE" secondAttribute="bottom" constant="47" id="qq7-Cr-56q"/>
+                            <constraint firstItem="b5F-2K-MPz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qyw-X7-lf5"/>
+                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="centerX" secondItem="vLr-3f-JUw" secondAttribute="centerX" id="sgC-TP-XtM"/>
+                            <constraint firstItem="GZi-MR-ClE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="wmU-iH-OsN"/>
+                            <constraint firstItem="GZi-MR-ClE" firstAttribute="width" secondItem="vLr-3f-JUw" secondAttribute="width" multiplier="0.688073" id="zU7-cP-4bK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Num" destination="GZi-MR-ClE" id="t4O-kO-DOv"/>
+                        <outlet property="SecondView" destination="Iqa-HN-ZSi" id="Y8y-gI-d33"/>
+                        <outlet property="Sensei" destination="xvu-aS-yZc" id="nde-zt-rLK"/>
+                        <outlet property="TextoLegal" destination="b5F-2K-MPz" id="I8H-X1-Ke7"/>
+                        <outlet property="numero" destination="lD2-5N-hek" id="uw3-at-INP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="83.208395802098963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UiP-cf-r3r">
+            <objects>
+                <viewController id="nLV-TD-eg6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6LL-UL-Uwd">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-HN-ZSi">
-                                <rect key="frame" x="16" y="110" width="343" height="553"/>
+                                <rect key="frame" x="16" y="57" width="343" height="553"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lD2-5N-hek">
@@ -118,34 +160,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="72V-1I-VUU"/>
-                            <constraint firstItem="GZi-MR-ClE" firstAttribute="top" secondItem="zbD-Fc-NT2" secondAttribute="bottom" constant="32" id="9J9-Bm-4fI"/>
-                            <constraint firstItem="vLr-3f-JUw" firstAttribute="top" secondItem="GZi-MR-ClE" secondAttribute="bottom" constant="25" id="Oaa-TR-HZl"/>
-                            <constraint firstItem="GZi-MR-ClE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="Qh7-le-ZFY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GZi-MR-ClE" secondAttribute="trailing" constant="139" id="YIg-hb-zpw"/>
-                            <constraint firstItem="GZi-MR-ClE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="bsL-kt-ZbJ"/>
-                            <constraint firstItem="b5F-2K-MPz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ivo-7W-4o0"/>
-                            <constraint firstItem="b5F-2K-MPz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lNQ-R3-G5o"/>
-                            <constraint firstItem="b5F-2K-MPz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="moM-Kv-T0a"/>
-                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="oYt-K4-h6m"/>
-                            <constraint firstItem="zbD-Fc-NT2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xaK-PY-F58"/>
-                            <constraint firstItem="vLr-3f-JUw" firstAttribute="top" secondItem="b5F-2K-MPz" secondAttribute="bottom" constant="43" id="yrz-Vd-y8P"/>
-                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jpi-9a-G26"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="Num" destination="GZi-MR-ClE" id="t4O-kO-DOv"/>
-                        <outlet property="SecondView" destination="Iqa-HN-ZSi" id="Y8y-gI-d33"/>
-                        <outlet property="Sensei" destination="xvu-aS-yZc" id="nde-zt-rLK"/>
-                        <outlet property="TextoLegal" destination="b5F-2K-MPz" id="I8H-X1-Ke7"/>
-                        <outlet property="numero" destination="lD2-5N-hek" id="uw3-at-INP"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRQ-2o-H9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.600000000000001" y="83.208395802098963"/>
+            <point key="canvasLocation" x="882" y="83"/>
         </scene>
     </scenes>
     <resources>
@@ -153,6 +174,9 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

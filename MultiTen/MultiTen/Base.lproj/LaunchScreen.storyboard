@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,35 +14,40 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="iphone.homebutton.landscape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-FO-gnC">
-                                <rect key="frame" x="16" y="119.5" width="343" height="422"/>
+                                <rect key="frame" x="18.333333333333343" y="314.66666666666669" width="391.33333333333326" height="310"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O SEGREDO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-fb-5ve">
-                                <rect key="frame" x="98" y="242" width="179.5" height="183"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-fb-5ve">
+                                <rect key="frame" x="111.66666666666667" y="442.33333333333331" width="204.66666666666663" height="54.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="O SEGREDO">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="30" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SenseiTreinoCha" translatesAutoresizingMaskIntoConstraints="NO" id="qvY-IB-rS6">
-                                <rect key="frame" x="44" y="339" width="286" height="481"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="cMs-FO-gnC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="0Ke-VA-LXL"/>
-                            <constraint firstItem="qm3-fb-5ve" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="242" id="1aE-AM-QpL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cMs-FO-gnC" secondAttribute="trailing" constant="16" id="3bq-6W-sus"/>
-                            <constraint firstItem="qm3-fb-5ve" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6Hl-Wq-fBN"/>
-                            <constraint firstItem="cMs-FO-gnC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ti2-Tw-scU"/>
-                            <constraint firstItem="qm3-fb-5ve" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WGq-Vp-lrw"/>
-                            <constraint firstItem="cMs-FO-gnC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yQu-ce-0kp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cMs-FO-gnC" secondAttribute="bottom" constant="122" id="zPM-Wk-IyV"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="width" secondItem="cMs-FO-gnC" secondAttribute="width" multiplier="0.523324" id="CwJ-cH-voo"/>
+                            <constraint firstItem="cMs-FO-gnC" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.914667" id="FoI-Bj-GCv"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="height" secondItem="cMs-FO-gnC" secondAttribute="height" multiplier="0.170306" id="QXa-KG-jKI"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cq5-Qq-FX1"/>
+                            <constraint firstItem="cMs-FO-gnC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gCm-1K-nqG"/>
+                            <constraint firstItem="cMs-FO-gnC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hcv-6G-t7a"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mEh-R4-g6m"/>
+                            <constraint firstItem="cMs-FO-gnC" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.343328" id="tCQ-Bf-yDR"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.478667" id="w9x-ym-yfT"/>
+                            <constraint firstItem="qm3-fb-5ve" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.0584708" id="yF4-Fp-m7y"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -51,10 +57,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SenseiTreinoCha" width="390" height="599"/>
-        <image name="iphone.homebutton.landscape" catalog="system" width="128" height="75"/>
+        <image name="iphone.homebutton.landscape" catalog="system" width="128" height="74"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

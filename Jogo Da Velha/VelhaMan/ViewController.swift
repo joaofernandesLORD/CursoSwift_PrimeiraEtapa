@@ -191,6 +191,7 @@ class ViewController: UIViewController {
 
     @IBAction func closeView(_ sender: Any) {
         Select.isHidden = false
+        WinLose.isHidden = true
         a1.setBackgroundImage(UIImage(named: ""), for: .normal)
         a1.isUserInteractionEnabled = true
         a2.setBackgroundImage(UIImage(named: ""), for: .normal)
@@ -281,7 +282,7 @@ class ViewController: UIViewController {
         //Diagonal direita
         c1.backgroundImage(for: .normal) == b2.backgroundImage(for: .normal) && b2.backgroundImage(for: .normal) == a3.backgroundImage(for: .normal) && (c1.backgroundImage(for: .normal) == UIImage(named: "x") || c1.backgroundImage(for: .normal) == UIImage(named: "o")) {
             Result.text = "VALHALLA te espera, nobre guerreiro"
-        WinLose.isHidden = false
+            WinLose.isHidden = false
     }
 }
 }
